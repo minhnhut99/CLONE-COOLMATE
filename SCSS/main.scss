@@ -1,3 +1,152 @@
-@import "header.scss";
-@import "global.scss";
-@import "mixin.scss";
+
+
+
+
+
+// VARIEBLE
+
+$primary-font: 'Sarabun', sans-serif;
+$orange-color: #FA6400;
+$white-color: #FFFFFF;
+$text-color: #878787;
+$mini-text-color:#666666;
+$black-color:#000726;
+
+
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+body {
+	font-family: $primary-font;
+	line-height: 1;
+	font-size: 1.4rem;
+}
+
+input, button {
+	outline: none;
+	font-family: $primary-font;
+	line-height: 1;
+}
+button {
+	cursor: pointer;
+}
+
+.wrapper-inner {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1215px;
+	margin: 0 auto;
+}
+
+.wrapper-outer {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+// MIXIN 
+//size 
+
+@mixin size($width,
+	$height: $width
+) {
+	width: $width;
+	height: $height;
+}
+
+//flex Box 
+
+@mixin flexbox($align-items: stretch
+, $justify-content: flex-start,
+ $direction: row,
+	$wrap: nowrap) {
+		display: flex;
+		align-items: $align-items;
+		justify-content: $justify-content;
+		flex-direction: $direction;
+		flex-wrap: $wrap;
+}
+
+
+
+
+
+// style header 
+
+.header {
+	padding-top: 3.5rem;
+	@include flexbox (center, space-between);
+	&-logo {
+		img {
+			@include size(15rem, 5.5rem);
+		}
+	}
+	&-nav {
+		cursor: pointer;
+	}
+	&-nav-item {
+		display: inline-block;
+		margin-left: 4rem;
+		cursor: pointer;
+		transition: 0.25s ease-in;
+	}
+	&-nav-item:hover > a {
+		color: $orange-color;
+	}
+	&-nav-item:hover > i {
+		color: $orange-color;
+	}
+	
+	&-nav-link {
+		color: $black-color;
+		font-size: 1.4rem;
+	}
+	
+
+	&-user {
+		@include flexbox(stretch, space-between);
+	}
+	&-user-item {
+		transition: ease-in 0.25s;
+		margin-right: 2rem;
+		p {
+			color: $black-color;
+		}
+	}
+	&-user-item:hover > a  i {
+		color: $orange-color;
+	}
+	&-user-item:hover > a p {
+		color: $orange-color;
+	}
+	&-user-item a {
+		@include flexbox(center, center, column);
+		transition: 0.25s ease-in-out;
+	}
+	&-user-item a i {
+		font-size: 2.4rem;
+		color: $black-color;
+		margin-bottom: 0.5rem;
+		font-weight: normal;
+		cursor: pointer;
+	}
+}  // end style header
+ 
