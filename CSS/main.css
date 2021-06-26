@@ -1,3 +1,27 @@
+.hot {
+  padding: 4px;
+  background-color: #FA6400;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  border-radius: 4px; }
+
+.new {
+  background: green;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: bold; }
+
+span {
+  display: block;
+  animation: visible 2s; }
+
+@keyframes visible {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 html {
   font-size: 62.5%; }
 
@@ -31,10 +55,12 @@ button {
 
 .wrapper-outer {
   max-width: 1920px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #F6F6F6; }
 
 .header {
   padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -46,17 +72,127 @@ button {
   .header-nav {
     cursor: pointer; }
   .header-nav-item {
-    display: inline-block;
-    margin-left: 4rem;
+    position: relative;
     cursor: pointer;
-    transition: 0.25s ease-in; }
+    transition: all 0.3s;
+    margin-left: 3rem;
+    display: inline-block; }
+  .header-nav-item::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 7rem;
+    height: 3.6rem;
+    bottom: 0;
+    top: 10px;
+    left: 0; }
   .header-nav-item:hover > a {
     color: #FA6400; }
   .header-nav-item:hover > i {
     color: #FA6400; }
+  .header-nav-item > .header-item-sub {
+    top: 200%;
+    left: -70%;
+    height: auto;
+    position: absolute;
+    background-color: #fff;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border: 1px solid #f8f8f8;
+    -webkit-box-shadow: 0 0 10px 0 #0003;
+    box-shadow: 0 0 10px 0 #0003;
+    border-radius: 6px;
+    display: none;
+    padding: 5px 0;
+    font-size: 16px; }
+  .header-item-sub > li > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .header-nav-item:hover > .header-item-sub {
+    display: block;
+    animation: visible 0.25s; }
+  .header-nav-item ul li::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 18%;
+    top: -15%;
+    height: 0;
+    border-left: 1.2rem solid transparent;
+    border-right: 1.2rem solid transparent;
+    border-bottom: 1.2rem solid #FFFFFF; }
+  .header-nav-item ul li a {
+    padding: 4px 5px;
+    white-space: nowrap;
+    margin-right: 5px;
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    line-height: 1.5; }
+  .header-nav-item ul li a:hover {
+    color: #FA6400; }
   .header-nav-link {
     color: #000726;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    position: relative; }
+  .header-nav-link span {
+    text-transform: uppercase;
+    position: absolute;
+    color: #FA6400;
+    top: -60%;
+    left: 100%;
+    font-size: 1.1rem; }
+  .header-site-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    width: auto;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    pointer-events: none; }
+  .header .site-menu-container {
+    background-color: #f6f6f6;
+    -webkit-box-shadow: 0 10px 10px 0 #0001;
+    box-shadow: 0 10px 10px 0 #0001;
+    padding: 10px;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .header .site-menu-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 1.6rem; }
+  .header .site-menu-column {
+    width: 100%;
+    margin-right: 5rem; }
+  .header .mega-menu {
+    text-decoration: none;
+    color: #000726;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .header .mega-menu-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem; }
+  .header .mega-menu-icon svg {
+    width: 3.2rem;
+    height: 3.2rem; }
+  .header .mega-menu-title {
+    width: 100%;
+    white-space: nowrap; }
   .header-user {
     display: flex;
     align-items: stretch;
