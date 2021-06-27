@@ -81,8 +81,8 @@ button {
     content: "";
     position: absolute;
     background-color: transparent;
-    width: 7rem;
-    height: 3.6rem;
+    width: 12rem;
+    height: 5rem;
     bottom: 0;
     top: 10px;
     left: 0; }
@@ -149,18 +149,18 @@ button {
     font-size: 1.1rem; }
   .header-site-menu {
     position: absolute;
-    top: 100%;
-    left: 0;
+    left: -60%;
     border-radius: 5px;
     width: auto;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    pointer-events: none; }
+    display: none; }
+  .header-nav-item:hover > .header-site-menu {
+    display: block;
+    animation: visible 0.25s; }
   .header .site-menu-container {
+    padding: 2rem;
     background-color: #f6f6f6;
     -webkit-box-shadow: 0 10px 10px 0 #0001;
     box-shadow: 0 10px 10px 0 #0001;
-    padding: 10px;
     -webkit-transition-delay: .3s;
     transition-delay: .3s;
     -webkit-transition: all .3s;
@@ -170,12 +170,14 @@ button {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 1.6rem; }
+    flex-wrap: nowrap; }
   .header .site-menu-column {
     width: 100%;
-    margin-right: 5rem; }
+    padding: 2rem; }
+  .header .site-menu-column:hover {
+    background-color: #FFFFFF; }
   .header .mega-menu {
+    cursor: pointer;
     text-decoration: none;
     color: #000726;
     display: flex;
