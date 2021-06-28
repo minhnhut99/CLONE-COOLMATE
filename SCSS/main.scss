@@ -211,9 +211,12 @@ button {
 		background-color: transparent;
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .2s;
-    transition: all .2s;
+    -webkit-transition: ease-in .2s;
+    transition: ease-in .2s;
 		line-height: 1.5;
+	}
+	&-nav-item i {
+		transition: ease-in .2s;
 	}
 	&-nav-item ul li a:hover {
 		color: $orange-color;
@@ -223,6 +226,7 @@ button {
 		color: $black-color;
 		font-size: 1.4rem;
 		position: relative;
+		transition: ease-in .2s;
 	}
 	&-nav-link span {
 		text-transform: uppercase;
@@ -231,6 +235,7 @@ button {
     top: -60%;
     left: 100%;
     font-size: 1.1rem;
+		transition: ease-in .2s;
 	}
 	&-site-menu {
 		position: absolute;
@@ -416,17 +421,33 @@ button {
 .policy {
 	width: 100%;
 	border-bottom: 2px solid $border-color;
+	margin-bottom: 10rem;
 	&-list {
 		padding: 3rem;
 		@include flexbox(center, space-between);
 	}
 	&-list-item {
+		cursor: pointer;
+		position: relative;
 		width: calc((100% - 2rem) / 4);
 		@include flexbox(center, center);
-		border-right: 2px solid $border-color;
+		span {
+			transition: .25s ease-in;
+		}
 	}
-	&-list-item:last-child {
-		border-right: none;
+	&-list-item:after {
+		position: absolute;
+		content: "";
+		width: 1px;
+		height: 6rem;
+		background-color: $border-color;
+		right: 0;
+	}
+	&-list-item:hover > span {
+		color: $orange-color;
+	}
+	&-list-item:last-child:after {
+		display: none;
 	}
 	&-list-icon {
 		width: 4.5rem;
@@ -448,3 +469,46 @@ button {
 		}
 	}
 }
+
+
+
+//style products
+.products {
+	@include flexbox(center, space-between);
+	&-new {
+		position: relative;
+	}
+	&-new-heading {
+		position: absolute;
+    font-size: 3rem;
+    color: #000726;
+    font-weight: bold;
+    left: -24%;
+    bottom: 15%;
+    text-transform: uppercase;
+    transform: rotate(
+		-90deg) translateY(100%);
+	}
+	&-highlights {
+		position: relative;
+	}
+	&-highlights-heading {
+		position: absolute;
+    font-size: 3rem;
+    color: #000726;
+    font-weight: bold;
+    top: 9%;
+    right: -20%;
+    text-transform: uppercase;
+    transform: rotate(90deg) translateY(100%);
+	}
+	&-highlights-arrow {
+		position: absolute;
+    right: -17%;
+    /* top: 0%; */
+    bottom: 5%;
+    transform: rotate(90deg);
+	}
+}
+
+

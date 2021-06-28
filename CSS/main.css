@@ -133,22 +133,26 @@ button {
     background-color: transparent;
     text-decoration: none;
     color: inherit;
-    -webkit-transition: all .2s;
-    transition: all .2s;
+    -webkit-transition: ease-in .2s;
+    transition: ease-in .2s;
     line-height: 1.5; }
+  .header-nav-item i {
+    transition: ease-in .2s; }
   .header-nav-item ul li a:hover {
     color: #FA6400; }
   .header-nav-link {
     color: #000726;
     font-size: 1.4rem;
-    position: relative; }
+    position: relative;
+    transition: ease-in .2s; }
   .header-nav-link span {
     text-transform: uppercase;
     position: absolute;
     color: #FA6400;
     top: -60%;
     left: 100%;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    transition: ease-in .2s; }
   .header-site-menu {
     position: absolute;
     left: -60%;
@@ -311,7 +315,8 @@ button {
 
 .policy {
   width: 100%;
-  border-bottom: 2px solid #F5F5F5; }
+  border-bottom: 2px solid #F5F5F5;
+  margin-bottom: 10rem; }
   .policy-list {
     padding: 3rem;
     display: flex;
@@ -320,15 +325,27 @@ button {
     flex-direction: row;
     flex-wrap: nowrap; }
   .policy-list-item {
+    cursor: pointer;
+    position: relative;
     width: calc((100% - 2rem) / 4);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: nowrap;
-    border-right: 2px solid #F5F5F5; }
-  .policy-list-item:last-child {
-    border-right: none; }
+    flex-wrap: nowrap; }
+    .policy-list-item span {
+      transition: .25s ease-in; }
+  .policy-list-item:after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 6rem;
+    background-color: #F5F5F5;
+    right: 0; }
+  .policy-list-item:hover > span {
+    color: #FA6400; }
+  .policy-list-item:last-child:after {
+    display: none; }
   .policy-list-icon {
     width: 4.5rem;
     height: 3rem; }
@@ -343,5 +360,40 @@ button {
     .policy-list-label b {
       color: #FA6400;
       font-weight: bold; }
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .products-new {
+    position: relative; }
+  .products-new-heading {
+    position: absolute;
+    font-size: 3rem;
+    color: #000726;
+    font-weight: bold;
+    left: -24%;
+    bottom: 15%;
+    text-transform: uppercase;
+    transform: rotate(-90deg) translateY(100%); }
+  .products-highlights {
+    position: relative; }
+  .products-highlights-heading {
+    position: absolute;
+    font-size: 3rem;
+    color: #000726;
+    font-weight: bold;
+    top: 9%;
+    right: -20%;
+    text-transform: uppercase;
+    transform: rotate(90deg) translateY(100%); }
+  .products-highlights-arrow {
+    position: absolute;
+    right: -17%;
+    /* top: 0%; */
+    bottom: 5%;
+    transform: rotate(90deg); }
 
 /*# sourceMappingURL=main.css.map */
