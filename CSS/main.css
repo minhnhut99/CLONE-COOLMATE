@@ -392,8 +392,148 @@ button {
   .products-highlights-arrow {
     position: absolute;
     right: -17%;
-    /* top: 0%; */
     bottom: 5%;
     transform: rotate(90deg); }
+
+.coolsub {
+  max-height: 75rem;
+  position: relative;
+  margin-top: 10rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto; }
+  .coolsub-product {
+    width: 45%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    position: relative; }
+  .coolsub-item {
+    display: block;
+    width: 32%;
+    background-color: #e0eeea;
+    margin: 0.5rem auto;
+    transition: ease-in .25s; }
+  .coolsub-item:hover {
+    background-color: #FFFFFF; }
+  .coolsub-item-container {
+    text-align: center; }
+  .coolsub-item-img {
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto; }
+  .coolsub-item-img img {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center; }
+  .coolsub-item-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    -webkit-transition: all .25s;
+    transition: all .25s; }
+  .coolsub-item-heading:hover {
+    color: #FA6400; }
+  .coolsub-item-qty {
+    font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+    padding-bottom: 5rem; }
+  .coolsub-content {
+    width: 55%;
+    padding-top: 6.5rem;
+    position: relative;
+    background-color: #F6F6F6;
+    background: url("https://www.coolmate.me/images/home/coolsub.jpg") no-repeat 35% 15%; }
+  .coolsub-content-wrapper {
+    padding-left: 5.5rem; }
+  .coolsub-content-heading {
+    display: block;
+    font-size: 2.5rem;
+    color: #000726;
+    word-spacing: 4px;
+    text-transform: uppercase; }
+  .coolsub-content-caption {
+    margin-top: 1.5rem;
+    font-size: 7.5rem;
+    color: #FA6400;
+    font-weight: 800; }
+  .coolsub-content-price {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    color: #000726; }
+    .coolsub-content-price span {
+      color: #FA6400;
+      font-weight: 500;
+      font-size: 2rem;
+      display: inline-block; }
+  .coolsub-content-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 725px;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 2.5rem; }
+  .coolsub-content-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #FFFFFF;
+    color: #FA6400;
+    width: 7rem;
+    height: 7rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem; }
+  .coolsub-content-item {
+    margin-right: 2.5rem; }
+  .coolsub-content-title {
+    margin-top: 2.5rem;
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: #000726;
+    font-weight: 300; }
+  .coolsub-content-description {
+    color: #000726;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-top: 1.5rem;
+    line-height: 1.5; }
+  .coolsub-content-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 5rem;
+    margin-left: -10px; }
+    .coolsub-content-actions a {
+      padding: 2rem 7rem;
+      border-radius: 1rem;
+      background-color: #FA6400;
+      color: #FFFFFF; }
+  .coolsub-content-policy {
+    color: #000726;
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-left: 4rem; }
 
 /*# sourceMappingURL=main.css.map */
