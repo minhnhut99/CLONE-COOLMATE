@@ -13,6 +13,18 @@
   font-size: 10px;
   font-weight: bold; }
 
+.primary-btn {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  transition: all .25s;
+  padding: 2rem 7rem;
+  border-radius: 1rem;
+  background-color: #FA6400; }
+
+.primary-btn:hover {
+  background-color: #e9a423; }
+
 span {
   display: block;
   animation: visible 2s; }
@@ -530,10 +542,87 @@ button {
       border-radius: 1rem;
       background-color: #FA6400;
       color: #FFFFFF; }
+  .coolsub-content-btn {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    transition: all .25s; }
+  .coolsub-content-btn:hover {
+    background-color: #e9a423; }
   .coolsub-content-policy {
     color: #000726;
     font-size: 1.6rem;
     font-weight: 200;
     margin-left: 4rem; }
+
+.help {
+  position: relative;
+  width: 100%;
+  height: 60rem;
+  padding-top: 4rem;
+  text-align: center;
+  z-index: 23; }
+  .help .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+    z-index: -1; }
+  .help-icon {
+    margin-bottom: 0.6rem; }
+  .help-slogan {
+    position: relative; }
+    .help-slogan h4 {
+      color: #000726;
+      font-weight: bold;
+      font-size: 2.4rem;
+      margin-bottom: 2.5rem; }
+    .help-slogan h4::after {
+      content: "";
+      position: absolute;
+      width: 7rem;
+      height: 4px;
+      background-color: #000726;
+      left: 50%;
+      bottom: -65%; }
+  .help-text {
+    font-size: 1.6rem; }
+    .help-text p {
+      color: #000726;
+      font-weight: 300;
+      line-height: 1.5;
+      margin-bottom: 1.5rem; }
+    .help-text span {
+      color: #FA6400;
+      font-weight: 600;
+      margin-bottom: 2rem; }
+  .help-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .help-box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 33%;
+    margin-right: 3rem;
+    padding: 3rem 0;
+    border: 2px solid #FA6400;
+    border-radius: 5px;
+    margin-bottom: 5rem; }
+    .help-box-item h2 {
+      font-size: 4.5rem;
+      color: #000726;
+      font-weight: 700;
+      margin-bottom: 2rem; }
+    .help-box-item p {
+      font-size: 1.6rem;
+      line-height: 1.6; }
 
 /*# sourceMappingURL=main.css.map */
