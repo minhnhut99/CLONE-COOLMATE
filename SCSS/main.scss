@@ -1178,3 +1178,102 @@ button {
 		color: $orange-color;
 	}
 }
+
+
+//style about
+
+
+.about {
+	position: relative;
+	margin-top: 5.5rem;
+	&-left {
+		// position: relative;
+		max-width: 72rem;
+		img {
+			width: 72rem;
+			height: 45.5rem;
+		}
+	}
+	&-content {
+		margin-top: 5rem;
+		@include flexbox(stretch, center);
+	}
+	&-content-hastag {
+		margin-right: 2rem;
+		span {
+			color: $orange-color;
+			font-size: 2.6rem;
+			font-weight: bold;
+		}
+	}
+	&-content-text {
+		font-size: 1.4rem;
+		color: $black-color;
+		line-height: 1.7;
+	}
+	&-btn {
+		margin-top: 5rem;
+	}
+	&-right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 60%;
+	}
+	&-right-heading {
+		left: -55%;
+    width: 100%;
+    margin-top: 2.5rem;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 6rem;
+    font-weight: bold;
+		h3  {
+			color: $black-color;
+			font-size: 5.5rem;
+		}
+		font-size: 6rem;
+		font-weight: bold;
+		span {
+			color: $orange-color;
+			font-weight: bold;
+			display: inline;
+		}
+	}
+	&-right-content {
+		width: 62rem;
+    height: 22rem;
+    position: absolute;
+    z-index: 2;
+    top: 12rem;
+    right: 15rem;
+    bottom: 0;
+    padding: 2.2rem;
+    background-color: #F0EFEF;
+		p {
+			color: $black-color;
+			font-weight: normal;
+			line-height: 1.7;
+		}
+	}
+	&-right-detail {
+		margin-top: 1.3rem;
+		font-size: 1.6rem;
+		color: $orange-color;
+		max-width: 12rem;
+		@include flexbox(center,center);
+		a  {
+			color: $orange-color;
+			font-weight: bold;
+			margin-right: 1rem;
+		}
+	}
+	&-right-img {
+		width: 40rem;
+    height: 40rem;
+    position: absolute;
+    top: 29rem;
+    left: 0;
+    z-index: 3;
+	}
+}
