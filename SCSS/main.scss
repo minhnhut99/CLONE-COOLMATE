@@ -41,7 +41,8 @@ $border-color: #F5F5F5;
 	background-color: $orange-color;
 }
 .primary-btn:hover {
-	background-color: rgb(233, 164, 35);
+	// background-color: rgb(199, 198, 195);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 // key frames
 
@@ -163,7 +164,7 @@ button {
 		content: "";
 		position: absolute;
 		background-color: transparent;
-		width: 12rem;
+		width: 3rem;
 		height: 5rem;
 		bottom: 0;
 		top: 10px;
@@ -226,6 +227,9 @@ button {
 		transition: ease-in .2s;
 	}
 	&-nav-item ul li a:hover {
+		color: $orange-color;
+	}
+	&-sub-link:hover {
 		color: $orange-color;
 	}
 	
@@ -306,25 +310,16 @@ button {
 		margin-right: 2rem;
 		p {
 			color: $black-color;
+			transition: ease-in 0.2s;
 		}
 	}
 
-	&-user-item:hover > a  i {
-		color: $orange-color;
-	}
 	&-user-item:hover > a p {
 		color: $orange-color;
 	}
 	&-user-item a {
 		@include flexbox(center, center, column);
 		transition: 0.25s ease-in-out;
-	}
-	&-user-item a i {
-		font-size: 2.4rem;
-		color: $black-color;
-		margin-bottom: 0.5rem;
-		font-weight: normal;
-		cursor: pointer;
 	}
 }  // end style header
  
@@ -675,9 +670,7 @@ button {
 		font-size: 1.7rem;
 		transition: all .25s;
 	}
-	&-content-btn:hover {
-		background-color: rgb(233, 164, 35);
-	}
+	
 	&-content-policy {
 		color: $black-color;
 		font-size: 1.6rem;
@@ -1395,7 +1388,7 @@ button {
 		@include flexbox(center, center);
 		svg {
 			width: 7rem;
-			height: 70rem;
+			height: 7rem;
 		}
 	}
 }

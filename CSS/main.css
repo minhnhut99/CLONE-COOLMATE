@@ -23,7 +23,7 @@
   background-color: #FA6400; }
 
 .primary-btn:hover {
-  background-color: #e9a423; }
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; }
 
 span {
   display: block;
@@ -95,7 +95,7 @@ button {
     content: "";
     position: absolute;
     background-color: transparent;
-    width: 12rem;
+    width: 3rem;
     height: 5rem;
     bottom: 0;
     top: 10px;
@@ -151,6 +151,8 @@ button {
   .header-nav-item i {
     transition: ease-in .2s; }
   .header-nav-item ul li a:hover {
+    color: #FA6400; }
+  .header-sub-link:hover {
     color: #FA6400; }
   .header-nav-link {
     color: #000726;
@@ -223,9 +225,8 @@ button {
     transition: ease-in 0.25s;
     margin-right: 2rem; }
     .header-user-item p {
-      color: #000726; }
-  .header-user-item:hover > a i {
-    color: #FA6400; }
+      color: #000726;
+      transition: ease-in 0.2s; }
   .header-user-item:hover > a p {
     color: #FA6400; }
   .header-user-item a {
@@ -235,12 +236,6 @@ button {
     flex-direction: column;
     flex-wrap: nowrap;
     transition: 0.25s ease-in-out; }
-  .header-user-item a i {
-    font-size: 2.4rem;
-    color: #000726;
-    margin-bottom: 0.5rem;
-    font-weight: normal;
-    cursor: pointer; }
 
 .banner {
   position: relative;
@@ -547,8 +542,6 @@ button {
     text-transform: uppercase;
     font-size: 1.7rem;
     transition: all .25s; }
-  .coolsub-content-btn:hover {
-    background-color: #e9a423; }
   .coolsub-content-policy {
     color: #000726;
     font-size: 1.6rem;
@@ -1177,6 +1170,6 @@ button {
     flex-wrap: nowrap; }
     .footer-bottom-logo svg {
       width: 7rem;
-      height: 70rem; }
+      height: 7rem; }
 
 /*# sourceMappingURL=main.css.map */
