@@ -1,8 +1,5 @@
 
 
-
-
-
 // VARIEBLE
 
 $primary-font: 'Sarabun', sans-serif;
@@ -1275,5 +1272,70 @@ button {
     top: 29rem;
     left: 0;
     z-index: 3;
+	}
+}
+
+
+//style footer 
+
+.footer {
+	 background-color: $header-color;
+	margin-top: 8.5rem;
+	padding-top: 2.2rem;
+	height: 650px;
+	width: 100%;
+	&-top {
+		@include flexbox(center, space-between);
+	}
+	&-logo {
+		img {
+			width: 15rem;
+			height: 5.5rem;
+		}
+	}
+	&-info {
+		@include flexbox(stretch, center);
+		background-color: $white-color;
+		padding: 2rem;
+		border-radius: 10px;
+		&-icon {
+			margin-right: 1.2rem;
+		}
+		span i {
+			font-size: 3rem;
+		}
+	}
+	&-info-title {
+		@include flexbox(flex-start, space-between, column);
+		h4 {
+			font-size: 1.5rem;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: $black-color;
+		}
+		span {
+			color: $orange-color;
+			font-size: 2rem;
+			font-weight: bold;
+		}
+	}
+	&-socials {
+		ul {
+			@include flexbox(center, center);
+			li {
+				margin-right: 2rem;
+			}
+			a {
+				overflow: hidden;
+				@include flexbox(center,center);
+				padding: 1.2rem;
+				border-radius: 10px;
+				background-color: $white-color;
+				transition: ease-in 0.25s;
+			}
+			a:hover {
+				box-shadow: -1px 2px 3px #c9bbbb;
+			}
+		}
 	}
 }
