@@ -304,16 +304,20 @@ button {
     .banner-slide-arrow a:hover {
       color: #FA6400; }
   .banner-slide {
-    width: 100%;
-    z-index: 1;
-    margin-top: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap; }
+    overflow: hidden; }
+    .banner-slide-container {
+      width: 100%;
+      z-index: 1;
+      margin-top: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      transition: transform 1.25s ease-in-out; }
     .banner-slide-img {
-      margin-left: 1.5rem; }
+      margin-left: 1.5rem;
+      flex-shrink: 0; }
       .banner-slide-img img {
         width: 55rem;
         height: 23.5rem;

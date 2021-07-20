@@ -400,12 +400,17 @@ button {
 		}
 	}
 	&-slide {
-		width: 100%;
-		z-index: 1;
-		margin-top: 2.5rem;
-		@include flexbox(center, space-between);
+		overflow: hidden;
+		&-container {
+			width: 100%; 	
+			z-index: 1;
+			margin-top: 2.5rem;
+			@include flexbox(center, space-between); 
+			transition: transform 1.25s ease-in-out;
+		}
 		&-img {
 			margin-left: 1.5rem;
+			flex-shrink: 0;
 			img {
 				width: 55rem;
 				height: 23.5rem;
