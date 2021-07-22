@@ -379,7 +379,26 @@ button {
   flex-direction: row;
   flex-wrap: nowrap; }
   .products-new {
-    position: relative; }
+    position: relative;
+    width: 50%; }
+  .products-new-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden; }
+    .products-new-imgs img {
+      width: 100%; }
+  .products-new-arrow {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    z-index: 2; }
+    .products-new-arrow a {
+      background-color: transparent; }
+    .products-new-arrow a i {
+      color: #F6F6F6; }
   .products-new-heading {
     position: absolute;
     font-size: 3rem;
@@ -820,7 +839,12 @@ button {
     -webkit-transition: all .3s;
     transition: all .3s; }
     .faqs-service-item a {
-      color: #000726; }
+      color: #000726;
+      transition: ease-in 0.25s; }
+    .faqs-service-item a:hover {
+      color: #FA6400; }
+  .faqs-service-item > .faqs-service-head[open=true] + .faqs-service-content {
+    display: block; }
   .faqs-service-head {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -845,7 +869,8 @@ button {
     border-radius: 10px;
     font-size: 16px;
     font-weight: 400;
-    line-height: 1.67; }
+    line-height: 1.67;
+    animation: visible 1.2s; }
     .faqs-service-content p {
       margin-top: 0;
       margin-bottom: 15px; }
