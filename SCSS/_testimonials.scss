@@ -1,0 +1,127 @@
+// style testimonials 
+
+
+.testimonials {
+	position: relative;
+	margin-top: 5rem;
+	&-heading {
+		position: relative;
+		@include flexbox(center, center);
+		h2 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%,-50%,0);
+			transform: translate3d(-50%,-50%,0);
+			z-index: 2;
+			color: #000;
+			font-size: 34px;
+			text-transform: uppercase;
+			width: 100%;
+			text-align: center;
+		}
+	}
+	&-heading::before {
+		content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6e6;
+    z-index: 1;
+    opacity: .8;
+	}
+
+	&-slide {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 2rem;
+		span {
+			margin-right: 1rem;
+			width: 1.3rem;
+			height: 1.3rem;
+			background-color: $header-color;
+			border-radius: 50%;
+		}
+		span:last-child {
+			margin-right: 0;
+		}
+		.active {
+			background-color: $orange-color;
+		}
+	}
+	&-content {
+		margin-top: 2rem;
+		@include flexbox(center, center);
+	}
+	&-content-box {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		margin-right: 2rem;
+		padding: 3rem;
+		@include flexbox(center, center);
+		background-color: $header-color;
+	}
+	&-content-box:last-child {
+		margin-right: 0;
+	}
+	&-box-text {
+		width: 50%;
+		height: 100%;
+	}
+	&-text-rating {
+		font-size: 1.5rem;
+		color: $orange-color;
+		margin-bottom: 2rem;
+	}
+	&-text-desc {
+		color: $black-color;
+		font-weight: 200;
+		font-size: 1.5rem;
+		line-height: 1.6;
+		margin-bottom: 5rem;
+	}
+	&-text-author {
+		color: $orange-color;
+		font-size: 1.6rem;
+		font-weight: 500;
+	}
+	&-box-img {
+		position: relative;
+		width: 50%;
+		height: 100%;
+		opacity: 1;
+		img {
+			object-fit: cover;
+			width: 100%;
+		}
+		.overlay {
+			position: absolute;
+			display: none;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.view-btn {
+			display: none;
+			text-align: center;
+			color: $white-color;
+			font-size: 1.6rem;
+			padding: 1rem;
+			border-radius: 4px;
+			text-transform: uppercase;
+			background-color: $orange-color;
+		}
+	}
+	&-box-img:hover > .overlay {
+		display: block;
+	}
+	&-box-img:hover > .view-btn {
+		display: block;
+	}
+}

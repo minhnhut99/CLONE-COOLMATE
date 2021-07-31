@@ -1,0 +1,76 @@
+//style help 
+
+.help {
+	position: relative;
+	width: 100%;
+	height: 60rem;
+	padding-top: 4rem;
+	text-align: center;
+	z-index: 23;
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #F7F7F7;
+		z-index: -1;
+	}
+	&-icon {
+		margin-bottom: 0.6rem;
+	}
+	&-slogan {
+		position: relative;
+		h4 {
+			color: $black-color;
+			font-weight: bold;
+			font-size: 2.4rem;
+			margin-bottom: 2.5rem;
+		}
+		h4::after {
+			content: "";
+			position: absolute;
+			width: 7rem;
+			height: 4px;
+			background-color: $black-color;
+			left: 50%;
+			bottom: -65%;
+		}
+	}
+	&-text {
+		font-size: 1.6rem;
+		p {
+			color: $black-color;
+			font-weight: 300;
+			line-height: 1.5;
+			margin-bottom: 1.5rem;
+		}
+		span {
+			color: $orange-color;
+			font-weight: 600;
+			margin-bottom: 2rem;
+		}
+	}
+	&-box {
+		@include flexbox(center, center);
+	}
+	&-box-item {
+		@include flexbox(center, center, column);
+		width: 33%;
+		margin-right: 3rem;
+		padding: 3rem 0;
+		border: 2px solid $orange-color;
+		border-radius: 5px;
+		margin-bottom: 5rem;
+		h2 {
+			font-size: 4.5rem;
+			color: $black-color;
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 1.6;
+		}
+	}
+}

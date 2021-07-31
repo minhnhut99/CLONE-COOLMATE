@@ -1,0 +1,95 @@
+.hot {
+	padding: 4px;
+	background-color: $orange-color;
+	color: $white-color;
+	font-size: 1.1rem;
+	border-radius: 4px;
+}
+
+.new {
+	background: green;
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+	font-size: 10px;
+	font-weight: bold;
+}
+.primary-btn {
+	color: $white-color;
+	text-transform: uppercase;
+	font-size: 1.7rem;
+	transition: all .25s;
+	padding: 2rem 7rem;
+	border-radius: 1rem;
+	background-color: $orange-color;
+}
+.primary-btn:hover {
+	// background-color: rgb(199, 198, 195);
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+// key frames
+
+span {
+  display: block;
+  animation: visible 2s;   
+}
+
+@keyframes visible {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+
+
+
+
+
+
+html {
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
+body {
+	font-family: $primary-font;
+	line-height: 1;
+	font-size: 1.4rem;
+}
+
+input, button {
+	outline: none;
+	font-family: $primary-font;
+	line-height: 1;
+}
+button {
+	cursor: pointer;
+}
+
+.wrapper-inner {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.container {
+	max-width: 1215px;
+	margin: 0 auto;
+}
+
+.wrapper-outer {
+  max-width: 1920px;
+  margin: 0 auto;
+	background-color: $header-color;
+}
+
+
+

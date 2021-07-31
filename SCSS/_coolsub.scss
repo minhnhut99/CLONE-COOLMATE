@@ -1,0 +1,161 @@
+.coolsub {
+	max-height: 75rem;
+	position: relative;
+	margin-top: 10rem;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	&-product {
+		width: 45%;
+		display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+		position: relative;
+	}
+	&-item {
+		display: block;
+		width: 32%;
+		background-color: #e0eeea;
+		margin: 0.5rem auto;
+		transition: ease-in .25s;
+	}
+	&-item:hover {
+		background-color: $white-color;
+	}
+	&-item-container {
+		text-align: center;
+	}
+	
+	&-item-img {
+		max-width: 120px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&-item-img img {
+		display: block;
+		width: 20rem;
+		height: 20rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+	}
+	&-item-heading {
+		font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    -webkit-transition: all .25s;
+    transition: all .25s;
+	}
+	&-item-heading:hover {
+		color: $orange-color;
+	}
+	&-item-qty {
+		font-size: 16px;
+    font-weight: 400;
+    color: #494949;
+		padding-bottom: 5rem;
+	}
+	&-content {
+		width:55%;
+		padding-top: 6.5rem;
+		position: relative;
+		background-color:$header-color;
+		background: url("https://www.coolmate.me/images/home/coolsub.jpg") no-repeat 35% 15%;
+	}
+	&-content-wrapper {
+		padding-left: 5.5rem;
+	}
+	&-content-heading {
+		display: block;
+		font-size: 2.5rem;
+		color: $black-color;
+		word-spacing: 4px;
+		text-transform: uppercase;
+	}
+	&-content-caption {
+		margin-top: 1.5rem;
+		font-size: 7.5rem;
+		color: $orange-color;
+		font-weight: 800;
+	}
+	&-content-price {
+		font-size: 1.6rem;
+		font-weight: 500;
+		margin-top: 1.5rem;
+		color: $black-color;
+		span {
+			color: $orange-color;
+			font-weight: 500;
+			font-size: 2rem;
+			display: inline-block;
+		}
+	}
+	&-content-info {
+		@include flexbox(center, center);
+		max-width: 725px;
+    margin-left: -15px;
+    margin-right: -15px;
+		margin-top: 2.5rem;
+	}
+	&-content-icon {
+		@include flexbox(center, center);
+		background-color: $white-color;
+		color: $orange-color;
+		width: 7rem;
+		height: 7rem;
+		border-top-left-radius: 2rem;
+		border-bottom-right-radius: 2rem;
+	}
+	&-content-item {
+		margin-right: 2.5rem;
+	}
+	&-content-title {
+		margin-top: 2.5rem;
+		font-size: 2.4rem;
+		text-transform: capitalize;
+		color: $black-color;
+		font-weight: 300;
+	}
+	&-content-description {
+		color: $black-color;
+		font-size: 1.6rem;
+		font-weight: 200;
+		margin-top: 1.5rem;
+		line-height: 1.5;
+	}
+	&-content-actions {
+		@include flexbox(center, flex-start);
+		margin-top: 5rem;
+		margin-left: -10px;
+		a {
+			padding: 2rem 7rem;
+			border-radius: 1rem;
+			background-color: $orange-color;
+			color: $white-color;
+		}
+	}
+	&-content-btn {
+		color: $white-color;
+		text-transform: uppercase;
+		font-size: 1.7rem;
+		transition: all .25s;
+	}
+	
+	&-content-policy {
+		color: $black-color;
+		font-size: 1.6rem;
+		font-weight: 200;
+		margin-left: 4rem;
+	}
+
+}

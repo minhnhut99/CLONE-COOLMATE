@@ -1,0 +1,122 @@
+.footer {
+  background-color: $header-color;
+ margin-top: 8.5rem;
+ padding-top: 2.2rem;
+ height: 650px;
+ width: 100%;
+ &-top {
+   @include flexbox(center, space-between);
+ }
+ &-logo {
+   img {
+     width: 15rem;
+     height: 5.5rem;
+   }
+ }
+ &-info {
+   @include flexbox(stretch, center);
+   background-color: $white-color;
+   padding: 2rem;
+   border-radius: 10px;
+   &-icon {
+     margin-right: 1.2rem;
+   }
+   span i {
+     font-size: 3rem;
+   }
+ }
+ &-info-title {
+   @include flexbox(flex-start, space-between, column);
+   h4 {
+     font-size: 1.5rem;
+     font-weight: bold;
+     text-transform: uppercase;
+     color: $black-color;
+   }
+   span {
+     color: $orange-color;
+     font-size: 2rem;
+     font-weight: bold;
+   }
+ }
+ &-socials {
+   ul {
+     @include flexbox(center, center);
+     li {
+       margin-right: 2rem;
+     }
+     a {
+       overflow: hidden;
+       @include flexbox(center,center);
+       padding: 1.2rem;
+       border-radius: 10px;
+       background-color: $white-color;
+       transition: ease-in 0.25s;
+     }
+     a:hover {
+       box-shadow: -1px 2px 3px #c9bbbb;
+     }
+   }
+ }
+ &-center {
+   margin-top: 5.5rem;
+   padding-bottom: 2rem;
+   @include flexbox(flex-start, flex-start);
+   border-bottom: 1px solid rgb(224, 221, 221);
+ }
+ &-center-item {
+   width: calc((100% - 60px) / 4);
+   h5 {
+     font-size: 1.8rem;
+     color: $black-color;
+     font-weight: 500;
+     text-transform: uppercase;
+     margin-bottom: 2rem;
+     display: inline-block;
+   }
+   p {
+     color: $black-color;
+     max-width: 25rem;
+     line-height: 1.7;
+     margin-bottom: 2rem;
+   }
+   span {
+     display: inline-block;
+     color: $black-color;
+     font-weight: bold;
+     text-transform: capitalize;
+     font-size: 1.6rem;
+   }
+   ul li {
+     margin-bottom: 2rem;
+     a {
+       color: $black-color;
+       transition: ease-in 0.15s;
+     }
+     a:hover {
+       color: $orange-color;
+     }
+   }
+ }
+ &-bottom {
+   @include flexbox(stretch, space-between);
+   margin-top: 2.5rem;
+ }
+ &-bottom-certification {
+   h4 {
+     display: inline-block;
+     margin-bottom: 2rem;
+     font-size: 1.8rem;
+     text-transform: uppercase;
+     font-weight: 500;
+   }
+ }
+ &-bottom-logo {
+   @include flexbox(center, center);
+   svg {
+     width: 7rem;
+     height: 7rem;
+   }
+ }
+}
+

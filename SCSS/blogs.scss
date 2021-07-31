@@ -1,0 +1,111 @@
+// style blogs 
+
+.blogs {
+	overflow: hidden;
+	@include flexbox(center, center);
+	&-heading {
+		text-align: center;
+		width: 20%;
+		font-size: 4.8rem;
+		// line-height: 1.25;
+		h3 {
+			color: $black-color;
+			font-weight: 600;
+			line-height: 1.5;
+		}
+		span {
+			display: inline-block;
+			color: $orange-color;
+			font-weight: 600;
+			margin-left: 1rem;
+		}
+		span:last-child {
+			margin-left: -0.5rem;
+		}
+	}
+	&-sub-heading {
+		font-size: 3rem;
+		h4 {
+			color: $black-color;
+			font-weight: 300;
+		}
+		span {
+			display: inline-block;
+			color: $orange-color;
+			font-weight: 700;
+			margin-left: 5px !important;
+		}
+	}
+	&-post {
+		position: relative;
+		width: 75%;
+		@include flexbox(center, center);
+	}
+	&-box {
+		position: relative;
+		margin-right: 1rem;
+	}
+	&-box:last-child {
+		margin-right: -20px;
+	}
+	&-content {
+		cursor: pointer;
+		position: absolute;
+		left: 10px;
+		bottom: 0;
+		padding-bottom: 1.2rem;
+		h3 {
+			font-size: 1.3rem;
+			color: $white-color;
+			transition: ease-in 0.25s;
+		}
+	}
+	&-new-icon {
+		display: inline-block;
+		margin-left: 1rem;
+	}
+	&-new-icon i {
+		color: $white-color;
+		font-size: 1.5rem;
+		transition: ease-in 0.25s;
+	}
+	&-thumb {
+		position:relative;
+		width: 100%;
+		height: 30rem;
+	}
+	&-thumb img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+		object-fit: cover;               
+	}
+	&-thumb a img:after {
+		content: "";
+		position: absolute;
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#0009),to(#0000));
+    background-image: linear-gradient(
+	0deg
+,#0009,#0000);
+    pointer-events: none;
+	}
+	&-title:hover {
+		color: $orange-color;
+	}
+	&-link {
+		cursor: pointer;
+		display: inline-block;
+		margin-top: 1rem;
+		color: $white-color;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		transition: ease-in 0.25s;
+	}
+	&-link:hover {
+		color: $orange-color;
+	}
+	&-link:hover i {
+		color: $orange-color;
+	}
+}
